@@ -1,0 +1,120 @@
+
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+<title>basic.html</title>
+<meta charset = "UTF-8" />
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"></a> <!-- Ask for a name of the website-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Introduction<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">References<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Literature Review and Methods<span class="sr-only">(current)</span></a>
+            </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Graphs
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Collocation</a>
+                <a class="dropdown-item" href="#">N-Grams</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Word Cloud Plots</a>
+            </div>
+        </li>
+        </ul> 
+    </div>
+</nav>
+<style>
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: repeat(2, 100px);
+        height: 500px;
+        width: 650px;
+        text-align: center;
+        grid-gap: 25px;
+	margin: 0 auto;
+        grid-template-areas:
+            "a b c"
+            "d e f"
+
+    }
+    .button1{
+        grid-area: a
+    }
+    button2{
+        grid-area: b
+    }
+    button3{
+        grid-area: c
+    }
+    button4{
+        grid-area: d
+    }
+    button5{
+        grid-area: e
+    }
+    button6{
+        grid-area: f
+    }
+    .button {
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        background-color:powderblue;
+        align-items: center;
+
+
+    }
+
+    .gradient {
+        Background-image: linear-gradient(#33B2FF, #33B2FF 45%, #F9FCFE);
+    }
+    html, body {
+    	height: 100%;
+	padding: 0;
+    }
+    
+    h1 {text-align: center;}
+    h2 {text-align: center;}
+    p1 {text-align: center;}
+    
+</style>
+</head>
+<body class = 'gradient'>
+    <h1> TITLE</h1>
+    <h2> Brief Description</h2>
+    <p1> Some description of this website and the purpose</p1>
+    <div class="wrapper">
+            <button type="button" class="btn btn-primary">Introduction</button>
+            <button type="button" class="btn btn-primary">Literature Review and Methods</button>
+            <button type="button" class="btn btn-primary">References</button>
+            <button type="button" class="btn btn-primary">Collocation</button>
+            <button type="button" class="btn btn-primary">Word Cloud Plots</button>
+            <button type="button" class="btn btn-primary">N-grams</button>
+    </div> 
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
