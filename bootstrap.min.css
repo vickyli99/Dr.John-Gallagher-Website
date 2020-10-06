@@ -185,6 +185,7 @@ figure {
 }
 
 img {
+<<<<<<< HEAD
     vertical-align: middle;
     border-style:dotted;
     position: relative;
@@ -195,6 +196,12 @@ img {
     height:300px;
     object-fit:cover;
     border-radius:50%;
+=======
+    padding-top; 100px;
+    padding-left: 50px;
+    vertical-align: middle;
+    border-style:none
+>>>>>>> bb7c578b7c111b6b5d8a3edfa7f36a81580a125e
 }
 
 svg {
@@ -456,7 +463,10 @@ hr {
     height:auto
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> bb7c578b7c111b6b5d8a3edfa7f36a81580a125e
 .img-thumbnail {
     padding: .25rem;
     background-color: #fff;
