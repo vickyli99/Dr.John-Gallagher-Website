@@ -48,30 +48,43 @@
 </head>
 <body>
   <div class="container-fluid bg-primary text-white" style="height: 500px;">
-    <h1>Collocation Graphs</h1>
-    <div class="btn-group">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Types
-          </button>
-          <!--Not sure what are those should be categorized -->
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" value="Write" href="#">Write</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" value="Transfer" href="#">Transfer</a>
+<div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom03">Category:</label>
+                <select class="form-control form-control-lg" name="category" id="validationCustom03" onchange="ChangecatList()" required>
+                  <option value="">Choose... </option>
+                  <option value="Write">Write</option>
+                  <option value="Transfer">Transfer</option>
+                  <option value="Teach">Teach</option>
+                  <option value="Student">Student</option>
+		  <option value="Rhetoric">Rhetoric</option>
+		  <option value="Persuade">Persuade</option>
+                </select>
+              <div class="invalid-feedback">
+                  Please provide a specifc type.
+              </div>
+            </div>
+
+
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom04">Sub-Category:</label>
+               <select class="form-control form-control-lg" id="validationCustom04" name="sub-category" onchange = "ChangecatListT()" required></select>
+              <div class="invalid-feedback">
+                  Please provide a sub-word.
+              </div>
+            </div>
+
+
+           <div class="col-md-6 mb-3">
+                <label for="validationCustom05">Sub-Word:</label>
+               <select class="form-control form-control-lg" id="validationCustom05" name="sub-word" onchange = "myFunction()" required></select>
+              <div class="invalid-feedback">
+                  Please provide a sub-word.
+              </div>
+            </div>
+
+		<img id = "test" src = "pixel.gif" />
           </div>
-    <div class="btn-group">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Sub-Word
-          </button>
-          <!--Not sure what are those should be categorized -->
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown_item" value='' href="#">Sub-Word</a>
-          </div>
-          
-      </div>
-      <img src="test_img.png" alt="Test">  
-     
-    </div>
     
 
     <!-- Optional JavaScript -->
@@ -79,6 +92,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/collocation_dropdown.js"></script>
+    <script src="js/collocation.js"></script>
   </body>
 </html>

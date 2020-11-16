@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet"  type=text/css href="bootstrap.min.css">
 
-    <title>Collocation</title>
+    <title>N-Grams</title>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#"></a> <!-- Ask for a name of the website-->
@@ -48,13 +48,13 @@
 </head>
 <body>
   <div class="container-fluid bg-primary text-white" style="height: 500px;">
-    <h1>Collocation Graphs</h1>
+    <h1>N-Grams</h1>
     <div class="row">
             <div class="col-md-6 mb-3">
                 <label for="validationCustom03">Types:</label>
                 <select class="form-control form-control-lg" name="category" id="validationCustom03" onchange="ChangecatList()" required>
                   <option value="">Choose... </option>
-                  <option value="Write">Whole Data</option>
+                  <option value="WholeData">Whole Data</option>
                   <option value="Transfer">Five Year</option>
                   <option value="Teach">By Year</option>
                   <option value="Student">By Journal</option>
@@ -73,7 +73,7 @@
           </div>
           
       </div>
-      <img src="https://dl.boxcloud.com/api/2.0/internal_files/714029517013/versions/758879410213/representations/png_paged_2048x2048/content/1.png?access_token=1!vgpQFiAkXMs8iODWZLyEoGImRbEGj1K-yelP9nGcm42jcNojG9_YfQv3qA0z_z4OpgC8lGuZvfmxW-T185hvRms0kDxMplyKCGl7C5Jd5LbUfiMdV6KuI5a-AYGPL4TyDVH0EbrPHhb7n3af5JR5mbnZW9avxGbIcW4bCWSuJ014nCWxwcsM8pvuaDEXFRayGtl1aaX2O8tvy9-Wiauc9nHYsPxQW14CTY-m4GzCuJTLoIlbo1JT8xudewVhCKQYRgL9pXyCmG6QnB07AYETAtzeC2J31AbojH_C6c499F62lfc8gJihnNbc0OKaZJWh3vjAsf-wtcKt67WZjRWoC-MNti-bxb_HVDiCTOMA7gBybSYytBr9d-bMk5swgo20Kbo2E6xa3rMR5ipj2uDTnuorYPQ_jYHrmG7uYZTVX87SrdF8UJiCwMK-bKLcOX4nYN04VnTShvYZeHknPxptmcCdxNIgg5wAxNT6KzLJRCgF8-0Yv6ScidaJoEQNaYYqg82UvCbXXoSLkm8-UvUdttS3w6-dU7Qeb494l7L8CD1NpOlnGFmyCiIkCi5WtsMg4fLz2YKQb-eydjKPKSkWPRdpayONEsN7PPP0batXAktZ30MsvNLWx_u0cQv7SSJblaOz9fTJNYndoOGukMGRzHjqIgvCjXYZDVgL-cMuO9rxab0.&box_client_name=box-content-preview&box_client_version=2.52.0" alt="Test">  
+      <img src="https://dl.boxcloud.com/api/2.0/internal_files/714031417560/versions/758881527960/representations/png_paged_2048x2048/content/1.png?access_token=1!yrl_Mz9HDHLP1S85Bi6P6Plyv_hJeizbgEyvkNgFo9HBosS9q-3MXGZPogs-aBOWD2VHRLTv9qvNfA2nf3urMZDNkxaSN6jhHAOYDAb2fNR_Ln-xpceDpizgeY-lvAc0hQjReJkUKIz_zH_ejvEADOvVHR0ecygMXy4hgm6Pu2qgCy86wA2yXeWqigGiUF6bLwX69Eh9thWZwY2qrjly_BFGgaIdvA9-FeGQoVAtlKseLpq-OlgbbTlZnlX0NzalZy9dNv1hXHzxLHqaZhpHyD9GeJYxvjDPJEgbDCwFjbpi92n6teFyp0-_-vWS54NtW-2QRg5vGTe3t1kgYhJzrXCZ22DAx7CiePHB1PSBMmdN0MB-WQ-H9y1OnnQ878PYr21bOyhxtKib9Ub8wXdvxKBP3NbVWpQnEcesXbxwz0NDI4mSU4lplsh6PkPsiq0r0KUpG_qjUs2Y7aAitG1eYa2_WXYeZtHz_lXmne86UK0G1S7m8HoQg21AKsvrq694_Qw9zX5ztIqewxm5GEe7vJN-OzuB7RL9XeInKKqh2TTI5mde_E9FTE6Kc-_8fLY12S9s-sO-i6sjTTzoNQPmsNalwU4tc9YNGCfMUnbj2i-6Ss_94_asXuSOqxoCExuFN1TVuFLNaULIWAoHA4V0BvsshwkglbE3FJ3o3BVXCG6jXHI.&box_client_name=box-content-preview&box_client_version=2.52.0" alt="Test">  
      
     </div>
     
@@ -83,6 +83,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/collocation.js"></script>
+    <script src="js/n-grams.js"></script>
   </body>
 </html>

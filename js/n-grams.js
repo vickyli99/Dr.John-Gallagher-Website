@@ -1,6 +1,6 @@
 var catAndActs = {};
-catAndActs['Whole Data'] = ['frequency1', 'frequency2', 'frequency3', 'Combined Word Counts'];
-catAndActs['Transfer'] = // not yet done  prob need one more drop down bar
+catAndActs['WholeData'] = ['Frequency 1', 'Frequency 2', 'Frequency 3', 'Combined Word Counts'];
+catAndActs['Transfer'] = ['Test'];// not yet done  prob need one more drop down bar
 catAndActs['Teach'] = ['Yearly_Training', 'Yearly_Within', 'Yearly_Writing', 'Yearly_Students', 'Yearly_Student', 'Yearly_Rhetorical', 'Yearly_Research', 'Yearly_Preservice', 'Yearly_Practices', 'Yearly_Presence', 'Yearly_New', 'Yearly_Must', 'Yearly_Literature', 'Yearly_Might', 'Yearly_Literacy', 'Yearly_Good', 'Yearly_Feedback', 'Yearly_Faculty', 'Yearly_English', 'Yearly_Educators'];
 catAndActs['Student'] = ['Yearly_Writing', 'Yearly_White', 'Yearly_Whose', 'Yearly_Use', 'Yearly_Undergraduate', 'Yearly_Understand', 'Yearly_Teaching', 'Yearly_Prepare', 'Yearly_School', 'Yearly_phD', 'Yearly_Might', 'Yearly_May', 'Yearly_Learning', 'Yearly_Individual', 'Yearly_Helping', 'Yearly_Help', 'Yearly_Female', 'Yearly_Engage', 'Yearly_Doctoral', 'Yearly_Develop'];
 catAndActs['Rhetoric'] = ['Yearly_Women', 'Yearly_Work', 'Yearly_Within', 'Yearly_Western', 'Yearly_Traditional', 'Yearly_Visual', 'Yearly_Tradition', 'Yearly_Theory', 'Yearly_Study', 'Yearly_Studies', 'Yearly_Space', 'Yearly_Situations', 'Yearly_Situation', 'Yearly_Scholarship', 'Yearly_Scholars', 'Yearly_Queer', 'Yearly_Public', 'Yearly_Practices', 'Yearly_Practice', 'Yearly_Power'];
