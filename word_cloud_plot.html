@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet"  type=text/css href="bootstrap.min.css">
 
     <title>Word Cloud Plot</title>
 
@@ -19,7 +19,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="home_test.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="Introduction.html">Introduction<span class="sr-only">(current)</span></a>
@@ -47,36 +47,49 @@
     </nav>
 </head>
 <body>
-    <div class="container-fluid bg-primary text-white" style="height: 500px;">
-        <h1>Word Cloud Plots</h1>
-        <div class="btn-group">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Types
-            </button>
-            <!--Not sure what are those should be categorized -->
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Write</a>
-                <a class="dropdown-item" href="#">Transfer</a>
-                <a class="dropdown-item" href="#">Teach</a>
-                <a class="dropdown-item" href="#">Student</a>
-                <a class="dropdown-item" href="#">Rhetoric</a>
-                <a class="dropdown-item" href="#">Persuade</a>
+  <div class="container-fluid bg-primary text-white" style="height: 500px;">
+    <h1>Word Cloud Plot</h1>
+    <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom03">Ranking:</label>
+                <select class="form-control form-control-lg" name="category" id="validationCustom03" onchange="ChangecatList()" required>
+                  <option value="">Choose... </option>
+                  <option value="Top50">Top50</option>
+                  <option value="Top25">Top25</option>
+                  <option value="Top10">Top10</option>
+                  <option value="All">All</option>
+                </select>
+              <div class="invalid-feedback">
+                  Please provide a specifc type.
+              </div>
             </div>
-        <div class="btn-group">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Sub-Word
-            </button>
-            <!--Not sure what are those should be categorized -->
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Write</a>
-                <a class="dropdown-item" href="#">Transfer</a>
-                <a class="dropdown-item" href="#">Teach</a>
-                <a class="dropdown-item" href="#">Student</a>
-                <a class="dropdown-item" href="#">Rhetoric</a>
-                <a class="dropdown-item" href="#">Persuade</a>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom04">Type:</label>
+                <select class="form-control form-control-lg" id="validationCustom04" name="sub-word" required></select>
+                <div class="invalid-feedback">
+                  Please provide a specific type and year
+                </div>
             </div>
-        </div>
-        </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom05">Type:</label>
+               <select class="form-control form-control-lg" id="validationCustom05" name="sub-word" required>
+                <option value="">Choose... </option>
+                <option value="Top50">WF Year</option>
+                <option value="Top25">WF Journal</option>
+                <option value="Top10">WF Five Year</option>
+                <option value="All">Trigram Year</option>
+                <option value="All">Trigram Journal</option>
+               </select>
+              <div class="invalid-feedback">
+                  Please provide a specific type
+              </div>
+            </div>
+          </div>
+          
+      </div>
+      <img src="https://dl.boxcloud.com/api/2.0/internal_files/714029517013/versions/758879410213/representations/png_paged_2048x2048/content/1.png?access_token=1!vgpQFiAkXMs8iODWZLyEoGImRbEGj1K-yelP9nGcm42jcNojG9_YfQv3qA0z_z4OpgC8lGuZvfmxW-T185hvRms0kDxMplyKCGl7C5Jd5LbUfiMdV6KuI5a-AYGPL4TyDVH0EbrPHhb7n3af5JR5mbnZW9avxGbIcW4bCWSuJ014nCWxwcsM8pvuaDEXFRayGtl1aaX2O8tvy9-Wiauc9nHYsPxQW14CTY-m4GzCuJTLoIlbo1JT8xudewVhCKQYRgL9pXyCmG6QnB07AYETAtzeC2J31AbojH_C6c499F62lfc8gJihnNbc0OKaZJWh3vjAsf-wtcKt67WZjRWoC-MNti-bxb_HVDiCTOMA7gBybSYytBr9d-bMk5swgo20Kbo2E6xa3rMR5ipj2uDTnuorYPQ_jYHrmG7uYZTVX87SrdF8UJiCwMK-bKLcOX4nYN04VnTShvYZeHknPxptmcCdxNIgg5wAxNT6KzLJRCgF8-0Yv6ScidaJoEQNaYYqg82UvCbXXoSLkm8-UvUdttS3w6-dU7Qeb494l7L8CD1NpOlnGFmyCiIkCi5WtsMg4fLz2YKQb-eydjKPKSkWPRdpayONEsN7PPP0batXAktZ30MsvNLWx_u0cQv7SSJblaOz9fTJNYndoOGukMGRzHjqIgvCjXYZDVgL-cMuO9rxab0.&box_client_name=box-content-preview&box_client_version=2.52.0" alt="Test">  
+     
+    </div>
     
 
     <!-- Optional JavaScript -->
@@ -84,5 +97,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/word_cloud_plot.js"></script>
   </body>
 </html>

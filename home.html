@@ -1,120 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!DOCTYPE HTML>
-<html lang = "en">
-<head>
-<title>basic.html</title>
-<meta charset = "UTF-8" />
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"></a> <!-- Ask for a name of the website-->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type=text/css href="bootstrap.min.css">
+
+    <title>Home</title><!-- Ask for a name of the website-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"></a> <!-- Ask for a name of the website-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">Introduction<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="Introduction.html">Introduction<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">References<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="literature_review_methods.html">Literature Review and Methods<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">Literature Review and Methods<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="References.html">References<span class="sr-only">(current)</span></a>
             </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Graphs
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Collocation</a>
-                <a class="dropdown-item" href="#">N-Grams</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Word Cloud Plots</a>
-            </div>
-        </li>
-        </ul> 
-    </div>
-</nav>
-<style>
-    .wrapper {
-        display: grid;
-        grid-template-columns: repeat(3, 200px);
-        grid-template-rows: repeat(2, 100px);
-        height: 500px;
-        width: 650px;
-        text-align: center;
-        grid-gap: 25px;
-	margin: 0 auto;
-        grid-template-areas:
-            "a b c"
-            "d e f"
-
-    }
-    .button1{
-        grid-area: a
-    }
-    button2{
-        grid-area: b
-    }
-    button3{
-        grid-area: c
-    }
-    button4{
-        grid-area: d
-    }
-    button5{
-        grid-area: e
-    }
-    button6{
-        grid-area: f
-    }
-    .button {
-        border: none;
-        color: black;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        background-color:powderblue;
-        align-items: center;
-
-
-    }
-
-    .gradient {
-        Background-image: linear-gradient(#33B2FF, #33B2FF 45%, #F9FCFE);
-    }
-    html, body {
-    	height: 100%;
-	padding: 0;
-    }
-    
-    h1 {text-align: center;}
-    h2 {text-align: center;}
-    p1 {text-align: center;}
-    
-</style>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Graphs
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="collocation.html">Collocation</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="n-grams.html">N-Grams</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="word_cloud_plot.html">Word Cloud Plots</a>
+                </div>
+            </li>
+            </ul> 
+        </div>
+    </nav>
 </head>
-<body class = 'gradient'>
-    <h1> TITLE</h1>
-    <h2> Brief Description</h2>
-    <p1> Some description of this website and the purpose</p1>
-    <div class="wrapper">
-            <button type="button" class="btn btn-primary">Introduction</button>
-            <button type="button" class="btn btn-primary">Literature Review and Methods</button>
-            <button type="button" class="btn btn-primary">References</button>
-            <button type="button" class="btn btn-primary">Collocation</button>
-            <button type="button" class="btn btn-primary">Word Cloud Plots</button>
-            <button type="button" class="btn btn-primary">N-grams</button>
+<body>
+    <div class="container-fluid bg-primary text-white" style="height: 700px;">
+        <div class="mx-auto" style="width: 800px; height: 450px;">
+                <h1> TITLE</h1>
+                <h2> Brief Description</h2>
+                <p1> Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph.</p1>
+            <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                    <a class="btn btn-light" href="introduction.html" role="button">Introduction</a>
+		    <a class="btn btn-light" href="literature_review_methods.html" role="button">Literature Review and Methods</a>
+                    <a class="btn btn-light" href="References.html" role="button">References</a>                          
+            </div>
+            <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                    <a class="btn btn-light" href="collocation.html" role="button">Collocation</a>
+                    <a class="btn btn-light" href="word_cloud_plot.html" role="button">Word Cloud Plots</a>
+                    <a class="btn btn-light" href="n-grams.html" role="button">N-Grams</a>
+            </div>
+        </div>
+    </div>
+    <div class = "mx-auto" style="width: 1200px; height: 450px;">
+        <img src="test_img.png" class="circle" />
+        <img src="test_img.png" class="circle" />
     </div> 
-</body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
